@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-const MONGODB_URI =  
+const MONGODB_URI =  "mongodb+srv://nicolastrevis:q9u5Ncq0UIX2YQLw@advotech.ekzhqgm.mongodb.net/clientes-node";
 app.use(cors()); 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
